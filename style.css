@@ -1,0 +1,126 @@
+/* Engineering portfolio foundation */
+:root {
+	--pink: #fce7f3;
+	--pink-dark: #be185d;
+	--ink: #1f2937;
+	--surface: #ffffff;
+	--border: #f3c4d9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background: var(--pink);
+	color: var(--ink);
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", sans-serif;
+	line-height: 1.6;
+}
+
+a {
+	color: var(--pink-dark);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header,
+main,
+footer {
+	width: min(1100px, calc(100% - 2rem));
+	margin-inline: auto;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1.5rem 0;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	align-items: center;
+	gap: 3rem;
+	min-height: 70vh;
+	padding: 5rem 0;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.15;
+}
+
+h1 {
+	max-width:  twelvech;
+	margin: 0 0 1rem;
+	font-size: clamp(2.75rem, 8vw, 5.5rem);
+}
+
+.hero p {
+	max-width: 38rem;
+	font-size: 1.15rem;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.5rem;
+	background: var(--pink-dark);
+	color: #fff;
+	font-weight: 700;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1.25rem;
+	padding: 3rem 0;
+}
+
+.card {
+	padding: 1.5rem;
+	border: 1px solid var(--border);
+	border-radius: 0.75rem;
+	background: var(--surface);
+	box-shadow: 0 8px 24px rgb(190 24 93 / 8%);
+}
+
+footer {
+	padding: 2rem 0;
+	border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+	header,
+	.hero {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.hero {
+		display: block;
+		min-height: auto;
+		padding: 3rem 0;
+	}
+}
