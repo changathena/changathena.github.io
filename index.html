@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width, initial-scale=1.0"
-    <title>Athena Chang Portfolio</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c085b0b9c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- navbar section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="/" id="navbar__logo">Athena Chang</a>
+        <a href="/" id="navbar__logo"><i class="fa-regular fa-heart"></i>Athena Chang</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -29,6 +34,40 @@
         </ul>
       </div>
     </nav>
+    
+    <!-- hero section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Hi, I'm Athena Chang</h1>
+          <h2>Electrical Engineering</h2>
+          <p>Official Portfolio</p>
+          <button class="main__btn"><a href="/">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+          <!-- change img file name, placeholder -->
+          <img src="images/pic1.svg" alt="pic" id="main__img">
+        </div>
+      </div>
+    </div>
+
+    <!-- projects section -->
+    <div class="projects">
+      <h1>View my projects</h1>
+      <div class="projects__container">
+        <div class="projects__card">
+          <h2>Medical Symptom Analyzer</h2>
+          <p>Purdue Engineering Projects in Community Service (EPICS) | Health Equity Research (HER)</p>
+          <button>View</button>
+        </div>
+        <div class="projects__card">
+          <h2>Digital Alarm Clock</h2>
+          <p>Soldering | Printed Circuit Boards | Schematics </p>
+          <button>View</button>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html> 
