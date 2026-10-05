@@ -48,7 +48,7 @@
 
 .fa-heart {
 	margin-right: 0.5rem;
-	color: #e5e5e5;
+	color: #1c1b1b;
 }
 
 .navbar__menu {
@@ -223,9 +223,10 @@
 .main__content h1 {
 	font-size: 4rem;
 	background-color: #1c1b1b;
-	background-image: linear-gradient(to top, #1c1b1b 0%, #e5e5e5 100%);
+	/* background-image: linear-gradient(to top, #1c1b1b 0%, #e5e5e5 100%); */
 	background-size: 100%;
 	transition: transform 0.5s ease, margin-bottom 0.5s ease;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -235,9 +236,10 @@
 .main__content h2 {
 	font-size: 2rem;
 	background-color: #1c1b1b;
-	background-image: linear-gradient(to top, #1c1b1b 0%, #e5e5e5 100%);
+	background-image: linear-gradient(to top, #4f4f4f 0%, #999999 100%);
 	background-size: 100%;
 	transition: transform 0.5s ease, margin-bottom 0.5s ease;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -383,7 +385,104 @@
 	}
 }
 
-/* projects section css */
+/* home screen recent projects section css */
+.recent__projects {
+	background: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.recent__projects h1 {
+	background-color: #1c1b1b;
+	background: #1c1b1b;
+	background-size: 100%;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	font-size: 2.5rem;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.recent__projects__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.recent__projects__card {
+	margin: 1rem;
+	height: 525px;
+	width: 400px;
+	border-radius: 4px;
+	/* img file placeholder */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 7, 17, 0.6) 100%), url('/images/pic3.jpg');
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+
+.recent__projects__card:nth-child(2) {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 7, 17, 0.6) 100%), url('/images/pic4.jpg');
+}
+
+.recent__projects h2 {
+	position: absolute;
+	top: 350px;
+	left: 30px;
+}
+
+/* summary thing under project names */
+.recent__projects__card p {
+	position: absolute;
+	top: 395px;
+	left: 30px;
+}
+
+.recent__projects__card a {
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background: #1c1b1b;
+	position: absolute;
+	top: 440px;
+	left: 30px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.recent__projects__card:hover {
+	transform: scale(1.075);
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+	.recent__projects h1 {
+		font-size: 2rem;
+		margin-top: 12rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.recent__projects h1 {
+		font-size: 1.2rem;
+	}
+
+	.recent__projects__card {
+		width: 300px;
+	}
+}
+
+/* projects page css */
 .projects {
 	background: #f7f7f7;
 	display: flex;
@@ -399,6 +498,7 @@
 	margin-top: 5rem;
 	margin-bottom: 5rem;
 	font-size: 2.5rem;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -440,7 +540,7 @@
 	left: 30px;
 }
 
-.projects__card button {
+.projects__card a {
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -452,6 +552,8 @@
 	left: 30px;
 	font-size: 1rem;
 	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
 }
 
 .projects__card:hover {
@@ -491,6 +593,14 @@
 
 
 /* resume page css */
-
+.resume {
+	display: flex;
+	flex-direction: column;
+}
 
 /* contact page css */
+.contact__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
