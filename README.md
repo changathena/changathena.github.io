@@ -24,4 +24,5 @@ To swap in your assets, follow the instructions below:
 - [Google Fonts Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans?preview.script=Latn)
 
 ## Author:
-**Athena Chang**, Purdue University
+Athena Chang
+Purdue University, College of Engineering
