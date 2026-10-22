@@ -25,4 +25,5 @@ To swap in your assets, follow the instructions below:
 
 ## Author:
 Athena Chang
-Purdue University, College of Engineering
+<br>
+changathena@outlook.com | [changathena.github.io](https://changathena.github.io/)
